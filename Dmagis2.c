@@ -61,7 +61,7 @@ void tambahSekolah(){
 
 void hapusSekolah(){
     char nama_sekolah[50];
-    printf("Nama Sekolah:");scanf("%s", nama_sekolah);
+    printf("Nama Sekolah:");gets("%s", nama_sekolah);
     for (int i = 0; i < jumlah_sekolah; i++){
         if (strcmp(sekolahs[i].nama_sekolah, nama_sekolah) == 0){
             for (int j = i; j < jumlah_sekolah -1 ; j ++){
